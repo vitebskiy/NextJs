@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Мой текстовый блок",
-  description: "Тестовый блок по работе с Next.js",
+  title: "Мой текстовый блок.",
+  description: "Тестовый блок по работе с Next.js.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
