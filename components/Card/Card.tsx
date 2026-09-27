@@ -16,7 +16,7 @@ export const Card = ({
   return (
     <>
       <div className={styles['card']}>
-        <div className="top">
+        <div className={styles['top']}>
           <img className={styles['img']} src={img} alt="изображение" />
         </div>
         <div className={styles['row']}>
