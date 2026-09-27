@@ -1,6 +1,7 @@
 import type { ReactElement } from 'react';
 import styles from './Card.module.css';
 import { CardProps } from './Card.props';
+import { Like } from '../Like/Like';
 
 export const Card = ({
   img,
@@ -24,10 +25,7 @@ export const Card = ({
             <div className={styles['date']}>{when}</div>
           </div>
           <div className={styles['right']}>
-            <span className={styles['like']}>
-              {like}
-              <img src="./like.svg" alt="Иконка лайка" />
-            </span>
+            <Like like={like} />
           </div>
         </div>
         <div className={styles['content']}>
@@ -38,7 +36,7 @@ export const Card = ({
             <a className={styles['link']} href={href}>
               Читать
               <span>
-                <img src="./arrow.svg" alt="" />
+                <img src="/arrow.svg" alt="" />
               </span>{' '}
             </a>
           </div>
