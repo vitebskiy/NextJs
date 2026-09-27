@@ -1,0 +1,89 @@
+.card {
+  box-sizing: border-box;
+  max-width: 350px;
+  padding: 10px;
+  border: 1px solid #f5f5f5;
+  border-radius: 5px;
+}
+
+.top {
+  margin-bottom: 15px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 15px;
+  margin-bottom: 7px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4b4b4b;
+}
+
+.date {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+
+.like {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c2c2c;
+}
+
+.descr {
+  margin-bottom: 15px;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  /* line-height: 21px; */
+  line-height: 150%;
+  color: #6e6e6e;
+  text-decoration-skip-ink: none;
+}
+
+.row-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.time {
+  font-size: 12px;
+  font-weight: 400;
+  color: #6e6e6e;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: #1473e6;
+  text-align: right;
+}
