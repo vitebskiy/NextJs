@@ -1,5 +1,12 @@
 .like {
+  display: flex;
+  align-items: flex-start;
+
   font-size: 12px;
   font-weight: 400;
   color: #6e6e6e;
+}
+
+.like img {
+  margin-left: 5px;
 }
