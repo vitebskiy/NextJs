@@ -32,6 +32,26 @@
   background-color: var(--foreground);
 }
 
+.list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 33px;
+  padding-left: 10px;
+}
+
+@media (width <= 900px) {
+  .list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 0;
+  }
+}
+
+@media (width <= 600px) {
+  .list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: column;

@@ -3,9 +3,34 @@
 import { Card, Liked } from '@/components';
 import { CardProps } from '@/components/Card/Card.props';
 import { useState } from 'react';
+import styles from './page.module.css'
 
 export default function Home() {
   const items: CardProps[] = [
+    {
+      id: 'grid-css',
+      img: '/mini.jpg',
+      category: 'Front-end',
+      when: '1 месяц назад',
+      like: 5,
+      title: 'Как работать с CSS Grid',
+      descr:
+        'Грид-раскладка (CSS Grid Layout) представляет собой двумерную систему сеток в CSS. Гриды подойдут и для верстки основных областей страницы..',
+      time: '3 минуты',
+      href: '/',
+    },
+    {
+      id: 'grid-css',
+      img: '/mini.jpg',
+      category: 'Front-end',
+      when: '1 месяц назад',
+      like: 5,
+      title: 'Как работать с CSS Grid',
+      descr:
+        'Грид-раскладка (CSS Grid Layout) представляет собой двумерную систему сеток в CSS. Гриды подойдут и для верстки основных областей страницы..',
+      time: '3 минуты',
+      href: '/',
+    },
     {
       id: 'grid-css',
       img: '/mini.jpg',
@@ -39,7 +64,7 @@ export default function Home() {
   };
 
   return (
-    <div>
+    <div className={styles['list']} >
       {items.map((i) => (
         <Card
           key={i.id}

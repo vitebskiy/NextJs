@@ -21,8 +21,10 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) minmax(0, 1126px) minmax(20px, 1fr);
+  grid-template-rows: auto 1fr;
+  row-gap: 17px;
 
   min-height: 100%;
 
@@ -33,6 +35,12 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body > header,
+body > main {
+  grid-column: 2;
+  min-width: 0;
 }
 
 * {

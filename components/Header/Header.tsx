@@ -1,9 +1,11 @@
+import cn from 'classnames';
 import Image from 'next/image';
 import styles from './Header.module.css';
+import { HeaderProps } from './Header.props';
 
-export const Header = () => {
+export const Header = ({ className, ...props }: HeaderProps) => {
   return (
-    <header className={styles['header']}>
+    <header className={cn(styles['header'], className)} {...props}>
       <Image
         src="/logo.png"
         alt="Логотип my_blog"
